@@ -45,7 +45,7 @@ public class DiamondExercise implements IDiamondExercise {
             }
             resultList.addAll(getNegativeDiamondResult(times));
             return resultList;
-        }else {
+        } else {
             return null;
         }
     }

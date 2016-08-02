@@ -36,12 +36,11 @@ public class TriangleExerciseTest extends BaseResource {
 
     @Test
     public void testInvalidInput() {
-        String exceptResult = "";
         exercise.horizontal(null);
-        Assert.assertEquals(exceptResult, bytes.toString());
+        Assert.assertNull(bytes.toString());
 
         exercise.horizontal(0);
-        Assert.assertEquals(exceptResult, bytes.toString());
+        Assert.assertNull(bytes.toString());
     }
 
 }

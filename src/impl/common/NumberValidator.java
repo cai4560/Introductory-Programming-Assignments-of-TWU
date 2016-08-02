@@ -1,7 +1,7 @@
 package impl.common;
 
 public class NumberValidator {
-    public Boolean isValid(Integer times) {
-        return !(times == null || times.equals(0));
+    public Boolean isValid(Integer number) {
+        return !(number == null || number.equals(0));
     }
 }
