@@ -1,5 +1,3 @@
-package test;
-
 import api.ITriangleExercise;
 import impl.TriangleExercise;
 import org.junit.Assert;

@@ -1,5 +1,3 @@
-package test;
-
 import api.IDiamondExercise;
 import impl.DiamondExercise;
 import org.junit.Assert;

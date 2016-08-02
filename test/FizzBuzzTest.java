@@ -1,4 +1,3 @@
-package test;
 
 import api.IFizzBuzzExercise;
 import impl.FizzBuzzExercise;

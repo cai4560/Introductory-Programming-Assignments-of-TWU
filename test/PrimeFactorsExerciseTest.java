@@ -1,5 +1,3 @@
-package test;
-
 import api.IPrimeFactorsExercise;
 import impl.PrimeFactorsExercises;
 import org.junit.Assert;
