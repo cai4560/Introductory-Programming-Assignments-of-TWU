@@ -1,12 +1,12 @@
 package test;
 
+import api.ITriangleExercises;
 import impl.TriangleExercises;
 import org.junit.Assert;
 import org.junit.Test;
-import test.BaseTest;
 
-public class TriangleExercisesTest extends BaseTest {
-    private TriangleExercises exercises = new TriangleExercises();
+public class TriangleExercisesTest extends BaseResource {
+    private ITriangleExercises exercises = new TriangleExercises();
 
     @Test
     public void testEasiest() {

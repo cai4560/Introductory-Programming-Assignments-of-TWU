@@ -6,7 +6,7 @@ import org.junit.Before;
 import java.io.ByteArrayOutputStream;
 import java.io.PrintStream;
 
-public class BaseTest {
+public class BaseResource {
     protected PrintStream console = null;
     protected ByteArrayOutputStream bytes = null;
 
