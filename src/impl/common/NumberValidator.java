@@ -1,6 +1,6 @@
 package impl.common;
 
-public class TimesValidator {
+public class NumberValidator {
     public Boolean isValid(Integer times) {
         return !(times == null || times.equals(0));
     }

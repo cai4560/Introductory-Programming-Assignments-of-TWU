@@ -1,37 +1,37 @@
 package test;
 
-import api.ITriangleExercises;
-import impl.TriangleExercises;
+import api.ITriangleExercise;
+import impl.TriangleExercise;
 import org.junit.Assert;
 import org.junit.Test;
 
-public class TriangleExercisesTest extends BaseResource {
-    private ITriangleExercises exercises = new TriangleExercises();
+public class TriangleExerciseTest extends BaseResource {
+    private ITriangleExercise exercise = new TriangleExercise();
 
     @Test
     public void testEasiest() {
-        exercises.easiest();
+        exercise.easiest();
         String exceptResult = "*\n";
         Assert.assertEquals(exceptResult, bytes.toString());
     }
 
     @Test
     public void testHorizontal() {
-        exercises.horizontal(5);
+        exercise.horizontal(5);
         String exceptResult = "*****\n";
         Assert.assertEquals(exceptResult, bytes.toString());
     }
 
     @Test
     public void testVertical() {
-        exercises.vertical(5);
+        exercise.vertical(5);
         String exceptResult = "*\n*\n*\n*\n*\n";
         Assert.assertEquals(exceptResult, bytes.toString());
     }
 
     @Test
     public void testRightTriangle() {
-        exercises.rightTriangle(3);
+        exercise.rightTriangle(3);
         String exceptResult = "*\n**\n***\n";
         Assert.assertEquals(exceptResult, bytes.toString());
     }
@@ -39,10 +39,10 @@ public class TriangleExercisesTest extends BaseResource {
     @Test
     public void testInvalidInput() {
         String exceptResult = "";
-        exercises.horizontal(null);
+        exercise.horizontal(null);
         Assert.assertEquals(exceptResult, bytes.toString());
 
-        exercises.horizontal(0);
+        exercise.horizontal(0);
         Assert.assertEquals(exceptResult, bytes.toString());
     }
 

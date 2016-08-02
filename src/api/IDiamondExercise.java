@@ -1,6 +1,6 @@
 package api;
 
-public interface IDiamondExercises {
+public interface IDiamondExercise {
     void isosceles(Integer times);
 
     void diamond(Integer times);

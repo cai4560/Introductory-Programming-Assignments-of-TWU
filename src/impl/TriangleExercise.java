@@ -1,11 +1,11 @@
 package impl;
 
-import api.ITriangleExercises;
-import impl.common.TimesValidator;
+import api.ITriangleExercise;
+import impl.common.NumberValidator;
 
-public class TriangleExercises implements ITriangleExercises {
+public class TriangleExercise implements ITriangleExercise {
     private static Character asterisk = '*';
-    private TimesValidator validator = new TimesValidator();
+    private NumberValidator validator = new NumberValidator();
 
     @Override
     public void easiest() {

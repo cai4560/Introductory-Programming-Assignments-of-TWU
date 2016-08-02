@@ -1,45 +1,45 @@
 package impl;
 
-import api.Constant;
-import api.IDiamondExercises;
-import impl.common.TimesValidator;
+import impl.common.Constant;
+import api.IDiamondExercise;
+import impl.common.NumberValidator;
 
 import java.util.*;
 
-public class DiamondExercises implements IDiamondExercises {
+public class DiamondExercise implements IDiamondExercise {
     private static Character asterisk = '*';
     private static Character space    = ' ';
-    private TimesValidator validator = new TimesValidator();
+    private NumberValidator validator = new NumberValidator();
 
     @Override
     public void isosceles(Integer times) {
         List<String> resultList = getDiamondStringResult(times,
-                Constant.DimamondPattern.ISOSCELES);
+                Constant.DiamondPattern.ISOSCELES);
         printResult(resultList);
     }
 
     @Override
     public void diamond(Integer times) {
         List<String> resultList = getDiamondStringResult(times,
-                    Constant.DimamondPattern.DIAMOND);
+                    Constant.DiamondPattern.DIAMOND);
         printResult(resultList);
     }
 
     @Override
     public void diamondWithName(Integer times) {
         List<String> resultList = getDiamondStringResult(times,
-                Constant.DimamondPattern.DIAMOND_BY_NAME);
+                Constant.DiamondPattern.DIAMOND_BY_NAME);
         printResult(resultList);
     }
 
     public List<String> getDiamondStringResult(Integer times, String pattern) {
         if (validator.isValid(times)) {
             List<String> resultList = getPositiveDiamondResult(times);
-            if (pattern.equals(Constant.DimamondPattern.DIAMOND_BY_NAME)) {
+            if (pattern.equals(Constant.DiamondPattern.DIAMOND_BY_NAME)) {
                 resultList.add(getUserName());
             } else {
                 resultList.add(getMiddleLineOfAsterisk(times));
-                if (pattern.equals(Constant.DimamondPattern.ISOSCELES)) {
+                if (pattern.equals(Constant.DiamondPattern.ISOSCELES)) {
                     return resultList;
                 }
             }

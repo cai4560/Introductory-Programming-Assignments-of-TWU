@@ -1,6 +1,6 @@
 package api;
 
-public interface ITriangleExercises {
+public interface ITriangleExercise {
 
     void easiest();
 
